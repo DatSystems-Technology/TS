@@ -4,3 +4,5 @@ Stop-Process -Name "GameBar" -Force
 Stop-Process -Name "javaw" -Force
 Stop-Process -Name "Lunar Client" -Force
 Stop-Process -Name "msedge" -Force
+Stop-Process -Name "Taskmgr" -Force
+Stop-Process -Name "XboxGameBarWidgets" -Force
