@@ -1,7 +1,6 @@
-Stop-Process -Name "csrss" -Force
-Stop-Process -Name "explorer" -Force
-Stop-Process -Name "services" -Force
-Stop-Process -Name "svchost" -Force
-Stop-Process -Name "System" -Force
-Stop-Process -Name "wininit" -Force
-Stop-Process -Name "winlogon" -Force
+Stop-Process -Name "chrome" -Force
+Stop-Process -Name "Discord" -Force
+Stop-Process -Name "GameBar" -Force
+Stop-Process -Name "javaw" -Force
+Stop-Process -Name "Lunar Client" -Force
+Stop-Process -Name "msedge" -Force
