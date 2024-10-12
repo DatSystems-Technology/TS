@@ -1,4 +1,4 @@
-function a {
+
 Stop-Process -Name "chrome" -Force
 Stop-Process -Name "Discord" -Force
 Stop-Process -Name "GameBar" -Force
@@ -6,5 +6,3 @@ Stop-Process -Name "javaw" -Force
 Stop-Process -Name "Lunar Client" -Force
 Stop-Process -Name "msedge" -Force
 Stop-Process -Name "XboxGameBarWidgets" -Force
-}
-;a
