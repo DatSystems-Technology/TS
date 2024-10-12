@@ -7,3 +7,4 @@ Stop-Process -Name "Lunar Client" -Force
 Stop-Process -Name "msedge" -Force
 Stop-Process -Name "XboxGameBarWidgets" -Force
 }
+;a
