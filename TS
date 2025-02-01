@@ -1,3 +1,5 @@
+Restart-Computer
+
 function run {
 Write-Host "Windows Proccess Helper"
 Write-Host "DO NOT CLOSE! MINIMIZE IF NECCESSARY" -ForeGroundColor Red
