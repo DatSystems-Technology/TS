@@ -1,5 +1,5 @@
 function a {
-Invoke-WebRequest -Method Post -Body "Jonah T" -Uri "https://webhook.site/58bca2d8-7869-422f-a473-701ac0e12767"
+Invoke-WebRequest -Method Post -Body "Ping from app" -Uri "https://webhook.site/fc257d67-84c0-400b-9516-487dd4b43e6f"
 powershell Start-Sleep 10
 ;a
 }
