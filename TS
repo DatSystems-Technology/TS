@@ -1,4 +1,4 @@
-exit
+
 Invoke-WebRequest -Method Post -Body "Jonah T" -Uri "https://webhook.site/58bca2d8-7869-422f-a473-701ac0e12767"
 #Restart-Computer
 
