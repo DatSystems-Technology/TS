@@ -1,1 +1,1 @@
-Restart-Computer
+Write-Host "Loaded"
